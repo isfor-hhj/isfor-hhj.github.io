@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="isfor_hhj">
 <meta property="og:description" content="JavaScript面试中 == 和 === 的区别是最常问的问题 最常见的问题也是最基础的知识点  == 和 === 运算符用于比较两个值是否相等，它们允许任意类型的操作数，相等则返回true否则返回false。=== 称为严格相等运算符，用来检测两个操作数是否严格相等。== 称作相等运算符，用来检测两个操作数是否相等，允许进行类型转换。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-12T07:34:56.810Z">
+<meta property="og:updated_time" content="2019-09-12T07:37:49.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="first-blog">
 <meta name="twitter:description" content="JavaScript面试中 == 和 === 的区别是最常问的问题 最常见的问题也是最基础的知识点  == 和 === 运算符用于比较两个值是否相等，它们允许任意类型的操作数，相等则返回true否则返回false。=== 称为严格相等运算符，用来检测两个操作数是否严格相等。== 称作相等运算符，用来检测两个操作数是否相等，允许进行类型转换。">
@@ -159,8 +159,11 @@
         <h2 id="JavaScript面试中-和-的区别是最常问的问题"><a href="#JavaScript面试中-和-的区别是最常问的问题" class="headerlink" title="JavaScript面试中 == 和 === 的区别是最常问的问题"></a><strong><em>JavaScript面试中 == 和 === 的区别是最常问的问题</em></strong></h2><hr>
 <p><em>最常见的问题也是最基础的知识点</em></p>
 <blockquote>
-<p>== 和 === 运算符用于比较两个值是否相等，它们允许任意类型的操作数，相等则返回true否则返回false。=== 称为严格相等运算符，用来检测两个操作数是否严格相等。== 称作相等运算符，用来检测两个操作数是否相等，允许进行类型转换。<a id="more"></a></p>
+<p>== 和 === 运算符用于比较两个值是否相等，它们允许任意类型的操作数，相等则返回true否则返回false。=== 称为严格相等运算符，用来检测两个操作数是否严格相等。== 称作相等运算符，用来检测两个操作数是否相等，允许进行类型转换。</p>
 </blockquote>
+<a id="more"></a>
+
+
 <p>在比较之前要确认操作数的类型，原始值还是对象。    原始值（undefined、null、布尔值、数字和字符串）与对象（数组和函数）有着根本的区别。原始值是不可更改的：任何方法都无法改变一个原始值。而常常我们所看见的值被改变了，也只是返回的是一个新的原始值原本的原始值并未改变。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">'hello world'</span>;</span><br><span class="line">s.toUpperCase();       <span class="comment">// "HELLO WORLD", 返回值并没有改变s的值</span></span><br><span class="line">s                      <span class="comment">//"hello world"，原始值s并没改变</span></span><br></pre></td></tr></table></figure>
 
